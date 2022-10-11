@@ -1,0 +1,455 @@
+body {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.blue-color {
+  color: #00609c;
+}
+
+.section-height {
+  height: 450px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.padding {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.custom-font-style {
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Header includes logo */
+.header {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+.header-right {
+  float: right;
+}
+
+.search-field {
+  width: 350px;
+  height: 45px;
+  border-radius: 25px;
+  opacity: 0.5;
+  border: 1px solid #000000;
+}
+.input-icons{
+  position: relative;
+}
+.fa-search {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+  opacity: 0.7;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #000;
+  letter-spacing: 0.4px;
+  padding: 20px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav>ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+#nav-menu,
+#close-menu,
+#mobileNav {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.menu-level-2 {
+  background-color: #eee;
+  color: #00609c;
+  display: none;
+}
+
+.menu-level-3 {
+  background-color: #00609c;
+  color: #fff;
+  display: none;
+}
+
+nav ul li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+nav ul li:hover,
+nav ul li.active,
+nav ul li:focus {
+  text-decoration: underline;
+}
+
+#mobileNavLevel1 ul>li {
+  list-style-type: none;
+}
+
+.dropdown,
+.dropdown-2 {
+  padding: 0;
+}
+
+.dropdown-content,
+.dropdown-content-2 {
+  display: none;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-2:hover .dropdown-content-2 {
+  display: block;
+}
+
+/* Section 1 */
+
+.img-container {
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.logo-text {
+  color: #fff;
+  position: absolute;
+  left: 105px;
+  top: 25%;
+}
+
+.summary-p {
+  position: absolute;
+  width: 445px;
+  height: 175px;
+  left: 100px;
+  top: 200px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 130%;
+  letter-spacing: 2.5px;
+  color: #fff;
+}
+
+/* Section 2 */
+.product-section {
+  background-color: #eee;
+}
+
+.product-img {
+  width: 50%;
+  height: 355px;
+  /* background: url(./images/adtralza-packshot.svg);
+    background-repeat: no-repeat; */
+}
+
+.product-img img {
+  display: block;
+  margin: auto;
+}
+
+.product-description {
+  margin: auto;
+  width: 50%;
+  height: 175px;
+}
+
+.product-info {
+  display: block;
+  width: 65%;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+}
+
+.learn-more {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+/* section 3 */
+.analysis-section {
+  box-sizing: border-box;
+  height: 520px;
+}
+
+.card {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.content-group {
+  max-width: 50%;
+  margin: auto;
+}
+
+.card img {
+  height: 220px;
+}
+
+.card p {
+  min-height: 50px;
+}
+
+.card small a,
+.card-2 small a {
+  color: #c017a2;
+  text-decoration: none;
+}
+
+/* Section 4 */
+.product-usages,
+.video-section,
+.references {
+  background-color: #eee;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+}
+
+.specificality-p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin: auto;
+  width: 450px;
+}
+
+.product-usages button {
+  width: 200px;
+  height: 50px;
+  background: #c017a2;
+  border-color: #c017a2;
+  border-radius: 100px;
+  color: #fff;
+  display: block;
+}
+
+.product-usages small {
+  line-height: 5;
+}
+
+/* section 5 */
+.section-padding {
+  padding: 5%;
+}
+
+.card-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #eee;
+  width: 49%;
+}
+
+.card-2 img {
+  width: 100%;
+}
+
+.clinical-tools-title {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  padding: 5%;
+}
+
+/* Section 6 */
+.video-section h1 {
+  margin: 0;
+}
+
+.video-row {
+  margin-top: 30px;
+}
+
+.video-card {
+  width: 50%;
+  height: 200px;
+}
+
+.video-group {
+  position: relative;
+  background-color: #fff;
+  width: 300px;
+  height: 150px;
+
+}
+
+.fa-play-circle {
+  color: #c017a2;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-group iframe {
+  position: relative;
+  z-index: -1;
+}
+
+.video-title {
+  font-size: 20px;
+}
+
+.video-decription-group {
+  width: 50%;
+}
+
+/* Footer */
+footer {
+  background-color: #00609c;
+  padding: 5%;
+}
+
+.footer-p {
+  color: #fff;
+  width: 350px;
+}
+
+.links,
+.links a {
+  color: #fff;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Start Mediaquery */
+
+@media screen and (max-width: 900px) {
+  nav>ul {
+    display: none;
+  }
+
+  #nav-menu {
+    display: block;
+    text-align: right;
+  }
+
+  #close-menu {
+    text-align: right;
+  }
+
+  .logo-text {
+    left: 5px;
+    display: block;
+    top: 0;
+    width: 50px;
+  }
+
+  .summary-p {
+    display: none
+  }
+
+  .product-description {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .product-info {
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
+  }
+
+  .product-img,
+  .product-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card,
+  .card-2,
+  .usage-img,
+  .img-container {
+    width: 100%;
+  }
+
+  .card {
+    background-color: #fff;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .content-group {
+    max-width: 100%;
+  }
+
+  .product-usages h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+  }
+
+  .clinical-tools-title {
+    margin: 0;
+  }
+
+  .video-card {
+    width: auto;
+    height: auto;
+  }
+
+  .video-decription-group {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

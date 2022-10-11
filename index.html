@@ -1,0 +1,376 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Figma</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/CSS/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Header -->
+        <div class="header">
+            <img tabindex="1" src="assets/images/logo/DermaWorld.svg" alt="">
+            <div class="header-right">
+                <div class="input-icons">
+                    <input tabindex="2" class="search-field" type="text" placeholder="Search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar 2 -->
+        <nav id="nav" tabindex="3">
+            <ul tabindex="4" class="menu-level-1">
+                <li tabindex="5">Bedingungen</li>
+                <li tabindex="6">Behandlungen</li>
+                <li tabindex="7">Veranstaltungen</li>
+                <li tabindex="8">Werkzeuge</li>
+                <li tabindex="9">Forschung und Erkenntnisse</li>
+            </ul>
+
+            <ul tabindex="10" class="menu-level-2">
+                <!-- In real life example this should be replaced by a for loop for drawing layers according to list length-->
+                <li tabindex="11"> </li>
+                <li tabindex="12"> </li>
+                <li tabindex="13"> </li>
+                <li tabindex="14"> </li>
+                <li tabindex="15"> </li>
+                <li tabindex="16"> </li>
+                <li tabindex="17"> </li>
+                <li tabindex="18"> </li>
+                <li tabindex="19"> </li>
+                <li tabindex="20"> </li>
+            </ul>
+            <ul tabindex="21" class="menu-level-3">
+                <li tabindex="22" class="active"> </li>
+                <li tabindex="23"></li>
+                <li tabindex="24"></li>
+                <li tabindex="25"></li>
+                <li tabindex="26"></li>
+                <li tabindex="27"></li>
+                <li tabindex="28"></li>
+                <li tabindex="29"></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile nav -->
+        <nav id="mobileNav">
+            <ul id="mobileNavLevel1" tabindex="4" class="menu-level-1">
+                <li>Bedingungen</li>
+
+                <ul class="dropdown">
+                    <li>Behandlungen</li>
+                    <div class="blue-color dropdown-content">
+                        <ul class="dropdown-2">
+                            <li>Adtralza</li>
+                            <div class="blue-color dropdown-content-2">
+                                <li>Overview</li>
+                                <li>Mode of Action</li>
+                                <li>Efficacy</li>
+                            </div>
+                        </ul>
+                        <li>Diavonex</li>
+                        <li>Diavobet</li>
+                    </div>
+                </ul>
+
+                <li>Veranstaltungen</li>
+                <li>Werkzeuge</li>
+                <li>Forschung und Erkenntnisse</li>
+            </ul>
+        </nav>
+
+        <span onclick="showMobileMenu()">
+            <i id="nav-menu" class="fa fa-bars fa-2x"></i>
+        </span>
+
+        <span onclick="hideMobileMenu()">
+            <i id="close-menu" class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </span>
+
+    </header>
+    <div id="wrapper" class="container-fluid">
+        <!-- Section 1 -->
+        <section tabindex="30">
+            <div class="img-container">
+                <img tabindex="31" src="assets/images/section-1.svg" alt="section-1-img">
+                <span class="logo-text">
+                    <img tabindex="32" src="assets/images/logo/Adtralza-global-logo.svg" alt="Adtralza-global-logo">
+                </span>
+                <p tabindex="33" class="summary-p">Adtralza® is a new treatment for adult patients with
+                    moderate-to-severe atopic
+                    dermatitis (eczema) who are candidates for systemic therapy.</p>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section tabindex="34" class="product-section">
+            <div class="flex">
+                <div class="product-img">
+                    <img tabindex="35" src="assets/images/adtralza-packshot.svg" alt="adtralza-packshot">
+                </div>
+                <div tabindex="36" class="product-description blue-color">
+                    <span class="product-info">
+                        It is the first and only biologic developed to specifically neutralize IL-13, a key driver of
+                        atopic dermatitis signs and symptoms(1,2)
+                    </span>
+                    <small class="learn-more">Learn more about how Adtralza® works and how to use it in
+                        treatment.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section tabindex="37" class="analysis-section">
+            <div class="row">
+                <div tabindex="38" class="card">
+                    <div class="content-group">
+                        <img tabindex="39" src="assets/images/logo/rate-logo.svg" alt="safety-logo">
+                        <h1 tabindex="40">Long term sustained improvement</h1>
+                        <p tabindex="41" class="card-description custom-font-style">9 out of 10 respondents experienced
+                            sustained
+                            disease control in
+                            clinical trials 10, providing sustained improvements in the burden of disease(1,2, 1, 8*†‡).
+                        </p>
+                        <small class="custom-font-style">
+                            <a tabindex="42" href="">See efficacy and trial data</a>
+
+                        </small>
+                    </div>
+                </div>
+                <div tabindex="43" class="card">
+                    <div class="content-group">
+                        <img tabindex="44" src="assets/images/logo/improvements-logo.svg" alt="improvemenets-logo">
+                        <h1 tabindex="45">Improvements in the burden of disease </h1>
+                        <p tabindex="46" class="card-description custom-font-style">Patients in clinical trials saw an
+                            improvement in
+                            Quality of Life with early symptom relief and sustained improvements in burden of disease
+                            from week 16 to 32(12,13).
+                        </p>
+                        <small class="custom-font-style">
+                            <a tabindex="47" href=""> Learn more about quality of life improvements</a>
+
+                        </small>
+
+                    </div>
+                </div>
+                <div tabindex="48" class="card">
+                    <div class="content-group">
+                        <img tabindex="49" src="assets/images/logo/safety-logo.svg" alt="safety-logo">
+                        <h1 tabindex="50">Good safety profile</h1>
+                        <p tabindex="51" class="card-description custom-font-style"></p>
+                        <small class="custom-font-style">
+                            <a tabindex="52" href="">See safety profile</a>
+
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section tabindex="53" class="product-usages padding">
+            <h2 tabindex="54" class="title blue-color custom-font-style">
+                Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs and symptoms.
+            </h2>
+
+            <div class="flex">
+                <div class="specificality-p custom-font-style">
+                    <p tabindex="55">
+                        By specifically targeting the IL-13 cytokine, Adtralza® inhibits the interaction with type II
+                        receptors and prevents IL-13-induced inflammatory responses in the skin(1,2).
+
+                        Adtralza® selectively modulates the dysregulated immune system by(1): <br>
+
+                        — Reducing markers of skin inflammation <br>
+                        — Improving markers of skin barrier integrity <br>
+                        — Reducing epidermal thickness
+                    </p>
+                </div>
+                <img tabindex="56" class="usage-img" src="assets/images/usage-section.svg" alt="usage-section">
+            </div>
+            <button tabindex="57" type="button">Watch the video</button>
+            <small tabindex="58"> Duration: 2:43</small>
+        </section>
+
+        <!-- section 5 -->
+        <section tabindex="59" class="section-padding">
+            <h1 tabindex="60" class="custom-font-style blue-color">Clinical tools - at a glance</h1>
+            <div class="flex">
+                <div tabindex="61" class="card-2">
+                    <img tabindex="62" src="assets/images/dosing-guide.svg" alt="nurse-image">
+                    <div class="container">
+                        <h4 tabindex="63" class="clinical-tools-title blue-color custom-font-style">Dosing guide</h4>
+                        <p tabindex="64" class="card-description custom-font-style">Adtralza® has a straightforward
+                            dosing regimen,
+                            with 150 mg prefilled syringes(1).
+                            This step by step video guide shows the patient how to self inject using the two syringes
+                            that come in the Adtralza® carton.
+                        </p>
+                        <small class="custom-font-style">
+                            <a tabindex="65" href="">Learn more about application and dosing</a>
+
+                        </small>
+                    </div>
+                </div>
+
+                <div tabindex="66" class="card-2">
+                    <img src="assets/images/patient-injection.svg" alt="patient-injection">
+                    <div class="container">
+                        <h4 tabindex="67" class=" clinical-tools-title blue-color custom-font-style">Patient injection
+                            made simple </h4>
+                        <p tabindex="68" class="card-description custom-font-style">Adtralza® has a straightforward
+                            dosing regimen,
+                            with 150 mg prefilled syringes(1).
+                            This step by step video guide shows the patient how to self inject using the two syringes
+                            that come in the Adtralza® carton.
+                        </p>
+                        <small class="custom-font-style">
+                            <a tabindex="69" href=""> Watch the video</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 6 -->
+        <section tabindex="70" class="video-section section-padding">
+            <h1 tabindex="71" class="custom-font-style blue-color">KOL Videos - get expert insights here</h1>
+            <small tabindex="72" class="custom-font-style">See what Key opinion leaders have to say about their
+                experiences with
+                Adtralza®
+            </small>
+
+            <div class="flex video-row">
+                <div tabindex="73" class="video-card flex">
+                    <div tabindex="74" class="video-group">
+                        <i class="fa fa-play-circle fa-3x"></i>
+                        <iframe id="video-1" src="" frameborder="0"> </iframe>
+                    </div>
+                    <div class="video-decription-group">
+                        <h1 tabindex="75" class="custom-font-style blue-color video-title">
+                            Video title
+                        </h1>
+                        <p tabindex="76" class="video-decription">
+                            Short description of the contents or subject of the video. You can upload a screen from the
+                            video as
+                            thumbnail image
+                        </p>
+                    </div>
+
+                </div>
+
+                <div tabindex="77" class="video-card flex">
+                    <div tabindex="78" class="video-group">
+                        <i class="fa fa-play-circle fa-3x"></i>
+                        <iframe id="video-1" src="" frameborder="0"> </iframe>
+                    </div>
+                    <div class="video-decription-group">
+                        <h1 tabindex="79" class="custom-font-style blue-color video-title">
+                            Video title
+                        </h1>
+                        <p tabindex="80" class="video-decription">
+                            Short description of the contents or subject of the video. You can upload a screen from the
+                            video as
+                            thumbnail image
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex">
+                <div tabindex="81" class="video-card flex">
+                    <div tabindex="82" class="video-group">
+                        <i class="fa fa-play-circle fa-3x"></i>
+                        <iframe id="video-1" src="" frameborder="0"> </iframe>
+                    </div>
+                    <div class="video-decription-group">
+                        <h1 tabindex="83" class="custom-font-style blue-color video-title">
+                            Video title
+                        </h1>
+                        <p tabindex="84" class="video-decription">
+                            Short description of the contents or subject of the video. You can upload a screen from the
+                            video as
+                            thumbnail image
+                        </p>
+                    </div>
+
+                </div>
+                <div tabindex="85" class="video-card flex">
+                    <div tabindex="86" class="video-group">
+                        <i class="fa fa-play-circle fa-3x"></i>
+                        <iframe id="video-1" src="" frameborder="0"> </iframe>
+                    </div>
+                    <div class="video-decription-group">
+                        <h1 tabindex="87" class="custom-font-style blue-color video-title">
+                            Video title
+                        </h1>
+                        <p tabindex="88" class="video-decription">
+                            Short description of the contents or subject of the video. You can upload a screen from the
+                            video as
+                            thumbnail image
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section 7 -->
+        <section tabindex="89" class="references">
+            <a class="blue-color">
+                <img src="assets/images/refrence-dropdown-btn.svg" alt="dropdown-icon">
+                <span tabindex="90">
+                    References
+                </span>
+
+            </a>
+        </section>
+
+    </div>
+
+</body>
+<script type="text/javascript" src="assets/JS/main.js"></script>
+<footer tabindex="91">
+    <div class="flex copy-rights">
+        <img tabindex="92" src="assets/images/logo/leo-logo.svg" alt="">
+        <div class="footer-right">
+            <div tabindex="93"class="footer-p">
+                <p>© Copyright LEO Pharma 2020 LEO and the LEO Lion Design are registered trademarks of LEO Pharma.</p>
+                <span>All rights reserved</span>
+            </div>
+        </div>
+
+
+    </div>
+    <div tabindex="94" class="flex links">
+        <a  tabindex="95" href="">Contact
+            <span>|</span>
+        </a>
+        <a  tabindex="96" href="">Imprint
+            <span>|</span>
+        </a>
+        <a  tabindex="97" href="">Conditions
+            <span>|</span>
+        </a>
+        <a  tabindex="98"href="">Terms of use
+            <span>|</span>
+        </a>
+        <a  tabindex="99" href="">Privacy
+            <span>|</span>
+        </a>
+        <a  tabindex="100" href="">Cookie content
+            <span>|</span>
+        </a>
+    </div>
+</footer>
+
+</html>
